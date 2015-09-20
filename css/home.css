@@ -1,0 +1,131 @@
+.home_box{
+	position:absolute;
+	width:15%;
+	text-align:center;
+}
+#logo{
+	left:42.5%;
+}
+#work{
+	left:57.5%;
+	opacity:0;
+}
+#believe{
+	left:27.5%;
+	opacity:0;
+}
+#develop{
+	left:27.5%;
+	top:20%;
+	opacity:0;
+}
+#gawds{
+	left:57.5%;
+	top:20%;
+	opacity:0;	
+}
+#one_parent{
+	position:absolute;
+	top:66.6%;
+	left:22.2%;
+	width:55.5%;
+	height:11.1%;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+#two_parent{
+	position:absolute;
+	top:22.2%;
+	left:22.2%;
+	width:11.1%;
+	
+	height:46%;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+#three_parent{
+	position:absolute;
+	top:22.2%;
+	left:32%;
+	width:46%;
+	
+	height:11.1%;
+}
+#four_parent{
+	position:absolute;
+	top:33.3%;
+	left:66.6%;
+	width:11.1%;
+	
+	height:66.6%;
+}
+#five_parent{
+	position:absolute;
+	top:88.8%;
+	left:0%;
+	width:68%;
+	
+	height:11.1%;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+#six_parent{
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:11.1%;
+
+	height:89%;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+#seven_parent{
+	position:absolute;
+	top:0%;
+	left:11.1%;
+	width:88.8%;
+
+	height:11.1%;
+}
+#eight_parent{
+	position:absolute;
+	top:11.1%;
+	left:88.8%;
+	width:11.1%;
+	height:66.8%;
+}
+#nine_parent{
+	position:absolute;
+	top:66.6%;
+	left:76%;
+	width:13%;
+	
+	height:11.1%;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+#one,#three,#five,#seven,#nine{
+	background:white;
+	position:absolute;
+	height: 100%;
+}
+#two,#four,#six,#eight{
+	background:white;
+	position:absolute;
+	width:100%;
+}

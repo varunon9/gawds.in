@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'TimeBurner';
+    src: url('font.ttf');
+}
+html{
+    height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	color:white;
+	overflow-X:hidden;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;;
+	/*background-color:  #4caf50*/
+	font-size: 1em;   
+    /*overflow: -moz-scrollbars-none;*/
+}
+
+::-webkit-scrollbar{
+  width:0px;
+  background:transparent;
+}
+#home{
+	position:relative;
+	width:100%;
+	height:100%;
+    overflow:hidden;
+}
+.section_heading{
+	position:absolute;
+	top:0;
+	left:0;
+	height:10%;
+	width:100%;
+}
+.section_heading h1{
+	font-size:1.5em;
+}
+.section_content{
+	position:absolute;
+	left:0;
+	top:10%;
+	height:90%;
+	width:100%;
+}#contact_us{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:rgba(200, 195, 195, 0.23);
+}
+@media only screen and (max-width: 950px){
+    body{
+    	font-size: .7em;
+    }
+    #develop,#gawds{
+        top:16%;
+    }
+    #meet_the_gawds{
+    	height:90%;
+    }
+    #what_we_did{
+    	height:90%;
+    }
+}
+@media only screen and (max-width: 700px){
+    body{
+    	font-size: .6em;
+    }
+    #develop,#gawds{
+        top:12%;
+    }
+    #meet_the_gawds{
+    	height:80%;
+    }
+    #what_we_did{
+    	height:80%;
+    }
+}
+@media only screen and (max-width: 450px){
+    body{
+    	font-size: .5em;
+    }
+    #develop,#gawds{
+        top:10%;
+    }
+    #meet_the_gawds{
+    	height:70%;
+    }
+    #what_we_did{
+    	height:70%;
+    }
+}
+@media only screen and (max-width: 320px){
+    body{
+    	font-size: .4em;
+    }
+    #develop,#gawds{
+        top:5%;
+    }
+    #meet_the_gawds{
+    	height:50%;
+    }
+    #what_we_did{
+    	height:50%;
+    }
+}
+
+

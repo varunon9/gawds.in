@@ -1,0 +1,127 @@
+           
+           #meet_the_gawds{
+           	  position:relative;
+           	  height:100%;
+           	  width:100%;
+           	  background-color: #333333;
+           	  text-align:center;
+           	  overflow:hidden;
+              color:#f4f4f4;
+              text-transform: capitalize;
+              
+           }
+           .cards{
+           	  position:absolute;
+           	  /*margin:1%;*/
+           	  width:10%;
+           	  height:30%;
+           	  /*background-color: #00a99d;*/
+           	  /*overflow:hidden;*/
+              padding:0;
+              background:transparent;
+              transition:filter .7s ease;
+              -webkit-transition:filter .7s ease;
+              -moz-transition:filter .7s ease;
+              -o-transition:filter .7s ease;
+              -ms-transition:filter .7s ease;
+
+           }
+           .cards:hover{
+              /*background:#00a99d;*/
+           }
+           .card_content{
+              position:absolute;
+              top:0;
+              left:0;
+              height:85%;
+              width:100%;
+           }
+           .card_image{
+              position:absolute;
+              top:0;
+              left:0;
+              height:80%;
+              width:100%;
+              cursor:pointer;
+              z-index:2;
+           }
+           .card_description{
+              position:absolute;
+              top:0;
+              left:0;
+              height:80%;
+              width:100%;
+              z-index:1;
+              display:none;
+              background:#00a99d;
+              perspective: 1000px;
+              box-shadow: 1px 1px 2px #777;
+
+           }
+
+           .card_name{
+              position:absolute;
+              top:90%;
+              left:0;
+              height:15%;
+              width:100%;
+              padding-top: 6%;
+              border:solid 1px #00a99d;
+           }
+           
+           .card_image img{
+           	  width:100%;
+              perspective: 1000px;
+              box-shadow: 0px 1px 2px #777;
+           }
+           
+            #slider{
+               margin: 0px;
+               padding: 0px;
+               height:100%;
+               left:0px;
+               position: absolute;
+          
+               overflow: hidden;
+               width:0%;
+               z-index:1;
+               background-color: rgba(0,0,0,0.1);
+               opacity:0;
+               display:none;
+
+            }
+            /*
+            .cross{
+            	position:absolute;
+            	background-color: #333;
+              border-radius: 50%;
+            	color:#333;
+            	top: -3%;
+              right: -3%;
+              width: 12%;
+              height: 10%;
+            	cursor:pointer;
+              display:none;
+              color:white;
+            }
+            */
+            .cross{
+                position: absolute;
+                width: 12%;
+                height: 10%;
+                cursor: pointer;
+                display: none;
+                color: #FFF;
+                opacity: 0.8;
+                text-transform: uppercase;
+                top: 1%;
+                right: -1.5%;
+                font-weight: 500;
+                font-size: 0.9em;
+                text-shadow: 1px 1px 1px #696969;
+                perspective: 1000px;
+            }
+            .cross:hover{
+              opacity:1;
+            }
+            

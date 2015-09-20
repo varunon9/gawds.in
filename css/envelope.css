@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #616161;
+    font-family: 'Trebuchet MS';
+}
+#EnvelopeSection {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#Envelope {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 500px;
+    opacity: 0;
+}
+#EnvelopeBackSVG {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+#EnvelopeFrontSVG {
+    position: absolute;
+    top: 235px;
+    left: 0px;
+    z-index: 2;
+}
+div#Form {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 453px;
+    z-index: 1;
+}
+table {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+input {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #333333;
+    border-color: #333333;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    width: auto;
+    z-index: 1;
+    opacity: 0.8;
+}
+textarea {
+    outline: none;
+    background: none;
+    border: none;
+    resize: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #333333;
+    border-color: #333333;
+    overflow: hidden;
+    opacity: 0.8;
+    width: 440px;
+}
+.Tag {
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    top: 29px;
+    display: block;
+    opacity: 0.5;
+    z-index: -1;
+}
+#MessageCount {
+    opacity: 0;
+}
+#Loading {
+    position: absolute;
+    top: 200px;
+    left: 656px;
+    font-weight: bold;
+    z-index: 99;
+    color: rgb(0, 190, 190);
+    display: none;
+    opacity: 0;
+}
+#Done {
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    font-weight: bold;
+    z-index: 99;
+    color: rgb(0, 220, 160);
+    display: none;
+    opacity: 0;
+}
+#Fail {
+    position: absolute;
+    top: 200px;
+    left: 656px;
+    font-weight: bold;
+    z-index: 99;
+    color: rgb(255, 120, 120);
+    display: none;
+    opacity: 0;
+}

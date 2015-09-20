@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GAWDS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="application-name" content="GAWDS">
+    <meta name="author" content="Divya Mamgai">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/envelope.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/elastic.js"></script>
+    <script type="text/javascript" src="js/TweenMax.js"></script>
+    <script type="text/javascript" src="js/envelope.js"></script>
+    <script type="text/javascript" defer>
+        var w = window,
+            d = document,
+            WindowObject = $(w),
+            DocumentObject = $(d),
+            Width = w.innerWidth,
+            Height = w.innerHeight,
+            HalfWidth = Width / 2,
+            HalfHeight = Height / 2,
+            EnvelopeObject;
+        DocumentObject.on('ready', function () {
+            EnvelopeObject = $('#Envelope').Envelope({
+                FormMethod: 'POST',
+                FormAction: 'post.php'
+            }).RePosition(Width, Height, HalfWidth);
+            OpenEnvelope();
+        });
+        WindowObject.on('resize', function () {
+            Width = w.innerWidth;
+            Height = w.innerHeight;
+            HalfWidth = Width / 2;
+            HalfHeight = Height / 2;
+            EnvelopeObject.RePosition(Width, Height, HalfWidth);
+        });
+        function OpenEnvelope(){
+            setTimeout(EnvelopeObject.Open, 10000);
+        }
+    </script>
+</head>
+
+<body>
+<seciton id="EnvelopeSection">
+    <div id="Envelope">
+        <div id="Loading">Posting...</div>
+        <div id="Done">Your message has been posted successfully!</div>
+        <div id="Fail">Failed!</div>
+        <object data="images/envelope_back.svg" type="image/svg+xml" id="EnvelopeBackSVG" width="100%" height="100%"></object>
+        <div id="Form">
+            <table cellpading="0" cellspacing="0" border="0">
+                <tbody>
+                <tr>
+                    <td>
+                        <div id="NameTag" class="Tag">Full Name</div>
+                        <input id="Name" maxlength="64">
+                    </td>
+                    <td>
+                        <div id="EmailTag" class="Tag">Email ID</div>
+                        <input id="Email" maxlength="64">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="MessageTag" class="Tag">Message <span id="MessageCount"></span></div>
+                        <textarea id="Message" maxlength="330" rows="0"></textarea>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <object data="images/envelope_front.svg" type="image/svg+xml" id="EnvelopeFrontSVG" width="100%" height="100%"></object>
+    </div>
+</seciton>
+</body>
+
+</html>
